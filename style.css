@@ -1,0 +1,35 @@
+*{
+  box-sizing: border-box;
+  border: 1px solid black;
+}
+
+html{
+  padding: 0px;
+  margin: 0px;
+}
+
+body{
+  background-color: black;
+
+}
+
+.navbar{
+  width: 200px;
+  position: fixed;
+  height: 100vh;
+  margin-left:1220px;
+}
+
+.backgroundImg{
+  padding-right: 200px;
+  width: 100vw;
+}
+
+.heroTitle{
+  font-size: 64px;
+  color: white;
+}
+
+.mainContainer{
+  padding-right: 200px;
+}

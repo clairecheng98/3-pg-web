@@ -17,13 +17,13 @@ body{
 .navbar{ /*vertical navbar that takes up whole space on the right*/
   padding-top: 150px;
   width: 200px;
-  position: fixed;
+  position: absolute;
   height: 100vh;
-  margin-left:1210px;
   background-color: black;
   font-size: 30px;
   opacity: 80%; /*transparent background*/
   top:0;/*delete space from top*/
+  right:0;
 }
 
 a{/*vertically center the links*/
@@ -44,7 +44,7 @@ a{/*vertically center the links*/
   background-size: cover;
   background-position: bottom;
   height: 90vh;
-  padding-top: 300px;
+  padding-top: 320px;
 }
 
 h1{
@@ -67,7 +67,7 @@ a:hover{ /*hover effect of the navbar*/
 .overlay{ /*text overlay on the background image*/
   overflow: hidden; /*does not allow scrolling*/
   background-color: black;
-  margin-right: 214px;
+  margin-right: 200px;
   opacity: 80%; /*consistent with sidebar*/
   position: absolute;
   top: 0;
@@ -77,9 +77,9 @@ a:hover{ /*hover effect of the navbar*/
 
 .content{
   color:#fff;
-  font-size: 26px;
+  font-size: 30px;
   position: absolute;
-  padding-top: 200px; /*center the text*/
+  padding-top: 150px; /*center the text*/
   padding-bottom: 200px;
   padding-left: 30px;
   padding-right: 30px;

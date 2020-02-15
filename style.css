@@ -10,26 +10,80 @@ html{
 
 body{
   background-color: black;
-
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 
-.navbar{
+.navbar{ /*vertical navbar that takes up whole space on the right*/
+  padding-top: 150px;
   width: 200px;
   position: fixed;
   height: 100vh;
-  margin-left:1220px;
+  margin-left:1210px;
+  background-color: black;
+  font-size: 30px;
+  opacity: 80%; /*transparent background*/
+  top:0;/*delete space from top*/
 }
 
-.backgroundImg{
-  padding-right: 200px;
-  width: 100vw;
-}
-
-.heroTitle{
-  font-size: 64px;
-  color: white;
+a{/*vertically center the links*/
+  color: #fff;
+  display: block;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
 }
 
 .mainContainer{
-  padding-right: 200px;
+  padding-left: 20px;
+}
+
+.heroTitle{/*title with full size */
+  background-image: url("Street.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  height: 90vh;
+  padding-top: 300px;
+}
+
+h1{
+  font-size: 68px;
+  color: white;
+  text-shadow: 2px 2px 4px #000000; /*add 2px shadow*/
+  margin-right: 200px; /*leave out space for the side bar*/
+}
+
+a:hover{ /*hover effect of the navbar*/
+  background-color: grey;
+  color:black;
+}
+
+.contentContainer{
+  padding-left: 20px;
+  margin-right:200px; /*leave our space for side bar*/
+}
+
+.overlay{ /*text overlay on the background image*/
+  overflow: hidden; /*does not allow scrolling*/
+  background-color: black;
+  margin-right: 214px;
+  opacity: 80%; /*consistent with sidebar*/
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.content{
+  color:#fff;
+  font-size: 26px;
+  position: absolute;
+  padding-top: 200px; /*center the text*/
+  padding-bottom: 200px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.mainContainer:hover .overlay{ /*hover effect showing the overlay*/
+  height: 100%; /*full page*/
 }

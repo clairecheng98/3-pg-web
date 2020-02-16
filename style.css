@@ -1,6 +1,8 @@
 *{
   box-sizing: border-box;
-  border: 1px solid black;
+  /* border: 1px solid white; */
+  padding: 0px;
+  margin: 0px;
 }
 
 html{
@@ -24,6 +26,7 @@ body{
   opacity: 80%; /*transparent background*/
   top:0;/*delete space from top*/
   right:0;
+  position: fixed;
 }
 
 a{/*vertically center the links*/
@@ -32,10 +35,13 @@ a{/*vertically center the links*/
   padding-top: 10px;
   padding-bottom: 10px;
   padding-left: 20px;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 .mainContainer{
   padding-left: 20px;
+  padding-right: 200px;
 }
 
 .heroTitle{/*title with full size */
@@ -61,21 +67,24 @@ a:hover{ /*hover effect of the navbar*/
 
 .contentContainer{
   padding-left: 20px;
-  margin-right:200px; /*leave our space for side bar*/
+  color:#fff;
+  font-size: 30px;
+
 }
 
 .overlay{ /*text overlay on the background image*/
   overflow: hidden; /*does not allow scrolling*/
   background-color: black;
-  margin-right: 200px;
   opacity: 80%; /*consistent with sidebar*/
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
+  margin-right: 200px;
+
 }
 
-.content{
+.overlayContent{
   color:#fff;
   font-size: 30px;
   position: absolute;
@@ -84,6 +93,45 @@ a:hover{ /*hover effect of the navbar*/
   padding-left: 30px;
   padding-right: 30px;
 }
-.mainContainer:hover .overlay{ /*hover effect showing the overlay*/
+
+h2{
+  font-size:50px;
+  color: white;
+  text-shadow: -20px 0px 5px #800000, 20px 0px 5px #800000,
+  10px 0px 2px black ; /*add 2px shadow*/
+  margin-left:50px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  letter-spacing: 10px;
+}
+
+.text{
+  font-size: 20px;
+  padding: 10px;
+}
+
+.subtitles{
+  font-size: 26px;
+  color: white;
+  margin-top: 15px;
+  margin-left: 30px;
+  font-weight: bold;
+}
+
+.coverPage:hover .overlay{ /*hover effect showing the overlay*/
   height: 100%; /*full page*/
+}
+
+.diary{
+  border-radius: 10px;
+  display: flex;
+}
+
+.diaries{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  vertical-align: middle;
 }
